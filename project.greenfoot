@@ -1,16 +1,22 @@
 #Greenfoot properties
-#Tue May 11 07:58:05 EDT 2021
+#Tue May 11 08:37:25 EDT 2021
+class.Man.superclass=greenfoot.Actor
+class.Europe2.superclass=greenfoot.World
 project.charset=UTF-8
 mainWindow.height=876
 editor.fx.0.width=0
 readme.y=10
 readme.x=10
 version=3.0.0
-class.Button.superclass=greenfoot.Actor
 class.begginer_level.image=space1.jpg
+class.Button.superclass=greenfoot.Actor
 readme.height=58
 class.begginer_level.superclass=greenfoot.World
-world.lastInstantiated=Start_Screen
+class.Europe2.image=brick.jpg
+world.lastInstantiated=Europe1
+class.EuButton.image=button-green.png
+class.Europe1.image=brick.jpg
+class.Man.image=man01.png
 editor.fx.0.y=0
 mainWindow.y=-8
 class.Button.image=button-blue.png
@@ -21,5 +27,7 @@ editor.fx.0.height=0
 package.numDependencies=0
 package.numTargets=0
 mainWindow.width=1456
+class.Europe1.superclass=greenfoot.World
+class.EuButton.superclass=greenfoot.Actor
 readme.name=@README
 class.Start_Screen.superclass=greenfoot.World

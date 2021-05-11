@@ -24,7 +24,7 @@ public class Start_Screen extends World
         showText("Asia", 500, 150);
         
         addObject(new Button(), 100, 200);
-        addObject(new Button(), 300, 200);
+        addObject(new EuButton(), 300, 200);
         addObject(new Button(), 500, 200);
     }
 }
