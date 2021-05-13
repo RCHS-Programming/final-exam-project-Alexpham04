@@ -13,7 +13,6 @@ public class Robot extends Actor
         private int Lives = 3;
         private int Score = 0;
         private int pizzaEaten = 0; 
-        private GreenfootImage Gameover= new GreenfootImage("gameover.png");
     /**
      * Act - do whatever the Robot wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
@@ -53,8 +52,7 @@ public class Robot extends Actor
     {
        if (isTouching(Wall.class))
        {
-           setLocation(25,50);
-           Greenfoot.playSound("hurt.wav");
+           setLocation(745,530);
            removeLife();
            showStatus();
        }
@@ -64,7 +62,6 @@ public class Robot extends Actor
         if (isTouching(Block.class))
         {
            setLocation(25,50);
-           Greenfoot.playSound("hurt.wav");
            removeLife();
            showStatus();
         }
@@ -79,7 +76,6 @@ public class Robot extends Actor
     }
     public void eatPizza()
     {
-        Greenfoot.playSound("eat.wav");
         if (isTouching(Pizza.class))
         {
              removeTouching(Pizza.class);
@@ -118,7 +114,6 @@ public class Robot extends Actor
                 Score = Score + 1;
                 pizzaEaten = 0;
                 showStatus();
-                Greenfoot.playSound("yipee.wav");
                 Greenfoot.stop();
             }
     }
