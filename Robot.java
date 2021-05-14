@@ -3,7 +3,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 /**
  * Write a description of class Robot here.
  * 
- * @author (your name) 
+ * @author Jonathan 
  * @version (a version number or a date)
  */
 public class Robot extends Actor
@@ -11,7 +11,6 @@ public class Robot extends Actor
         private GreenfootImage robotimage1= new GreenfootImage("man01.png");
         private GreenfootImage robotimage2= new GreenfootImage("man02.png");
         private int Lives = 3;
-        private int Score = 0;
         private int pizzaEaten = 0; 
     /**
      * Act - do whatever the Robot wants to do. This method is called whenever
@@ -61,7 +60,7 @@ public class Robot extends Actor
     {
         if (isTouching(Block.class))
         {
-           setLocation(25,50);
+           setLocation(745,530);
            removeLife();
            showStatus();
         }
@@ -70,7 +69,7 @@ public class Robot extends Actor
     {
         if (isTouching(Home.class))
         {
-            setLocation(25,50);
+            setLocation(745,530);
             increaseScore();
         }
     }
@@ -111,7 +110,6 @@ public class Robot extends Actor
     {
             if (pizzaEaten == 6)
             {
-                Score = Score + 1;
                 pizzaEaten = 0;
                 showStatus();
                 Greenfoot.stop();
@@ -121,6 +119,5 @@ public class Robot extends Actor
     {
         getWorld().showText("Lives : "+Lives, 70,540);
         getWorld().showText("Pizzas : "+pizzaEaten,70, 560);
-        getWorld().showText("Score : "+Score, 70, 580);
     }
 }

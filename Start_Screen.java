@@ -26,5 +26,10 @@ public class Start_Screen extends World
         addObject(new Button(), 100, 200);
         addObject(new EuButton(), 300, 200);
         addObject(new Button(), 500, 200);
+        
+        if(Greenfoot.mouseClicked("EuButton"))
+        {
+           Greenfoot.setWorld(new Europe1());
+        }
     }
 }

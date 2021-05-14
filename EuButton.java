@@ -3,7 +3,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 /**
  * Write a description of class EuButton here.
  * 
- * @author (your name) 
+ * @author Jonathan & Alex
  * @version (a version number or a date)
  */
 public class EuButton extends Actor
