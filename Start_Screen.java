@@ -25,6 +25,6 @@ public class Start_Screen extends World
         
         addObject(new Button(), 100, 200);
         addObject(new Button(), 300, 200);
-        addObject(new Button(), 500, 200);
+        addObject(new AB(), 500, 200);
     }
 }
