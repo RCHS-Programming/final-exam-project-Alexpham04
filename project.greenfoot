@@ -1,10 +1,10 @@
 #Greenfoot properties
-#Fri May 14 07:42:37 EDT 2021
+#Fri May 14 08:28:04 EDT 2021
 editor.fx.0.height=867
 target2.width=90
 target8.name=Robot
 class.Europe1.image=weave.jpg
-class.Europe2.image=brick.jpg
+class.Europe2.image=weave.jpg
 class.begginer_level.superclass=greenfoot.World
 target1.type=ClassTarget
 class.EuButton.image=button-green.png

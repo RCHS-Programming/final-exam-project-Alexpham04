@@ -14,6 +14,9 @@ public class EuButton extends Actor
      */
     public void act() 
     {
-        
-    }    
+        if (Greenfoot.mouseClicked("EuButton"))
+        {
+            Greenfoot.setWorld(new Europe1());
+        }
+    }
 }

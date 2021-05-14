@@ -16,6 +16,28 @@ public class Europe2 extends World
     public Europe2()
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
-        super(600, 400, 1); 
+        super(800, 600, 1); 
+        
+        addObject(new Robot(), 745, 530);
+        
+        
+        
+        
+         for(int i = 0; i < 16; i++)
+        {
+            addObject(new Wall("edge.png"), 25 + 50*i, 12);
+        }
+         for(int i = 0; i < 16; i++)
+        {
+            addObject(new Wall("edge.png"), 25 + 50*i, 587);
+        }
+         for(int i = 0; i < 16; i++)
+        {
+            addObject(new Wall("edge2.png"), 12, 25 +50*i);
+        }
+         for(int i = 0; i < 16; i++)
+        {
+            addObject(new Wall("edge2.png"), 787, 25 +50*i);
+        } 
     }
 }

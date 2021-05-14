@@ -69,7 +69,7 @@ public class Robot extends Actor
     {
         if (isTouching(Home.class))
         {
-            setLocation(745,530);
+            Greenfoot.setWorld(new Europe2());
             increaseScore();
         }
     }
