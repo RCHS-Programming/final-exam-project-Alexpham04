@@ -14,6 +14,6 @@ public class Block extends Actor
      */
     public void act() 
     {
-        turn (-9);
+        turn (-2);
     }    
 }
