@@ -21,8 +21,17 @@ public class Europe2 extends World
         addObject(new Robot(), 745, 530);
         
         addObject(new Block(), 425, 565);
-        addObject(new Block(), 350, 230);        
+        addObject(new Block(), 300, 230);        
         addObject(new Block(), 500, 230);
+       
+        addObject(new Pizza(), 70, 60);
+        addObject(new Pizza(), 600, 60);
+        addObject(new Pizza(), 720, 60);
+        addObject(new Pizza(), 180, 60);
+        addObject(new Pizza(), 470, 400);
+        addObject(new Pizza(), 390, 240);
+        
+        addObject(new Home(), 120, 520);
         
          for(int i = 0; i < 16; i++)
         {
@@ -69,6 +78,23 @@ public class Europe2 extends World
          for(int i = 0; i < 3; i++)
         {
             addObject(new Wall("edge2.png"), 650, 0+50*i);
+        }
+    
+         for(int i = 0; i < 3; i++)
+        {
+            addObject(new Wall("edge2.png"), 125, 0+50*i);
+        }        
+         for(int i = 0; i < 4; i++)
+        {
+            addObject(new Wall("edge.png"), 150 + 50 * i, 112);
+        }
+         for(int i = 0; i < 4; i++)
+        {
+            addObject(new Wall("edge.png"), 620 - 50 * i, 112);
+        }
+         for(int i = 0; i < 5; i++)
+        {
+            addObject(new Wall("edge2.png"), 125, 145 + 50 * i);
         }
     }
 }
