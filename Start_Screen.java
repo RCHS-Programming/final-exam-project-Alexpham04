@@ -19,12 +19,10 @@ public class Start_Screen extends World
         super(600, 400, 1); 
         
         showText("Select area of world", 300, 50);
-        showText("North America", 100, 150);
-        showText("Europe", 300, 150);
+        showText("Europe", 100, 150);
         showText("Asia", 500, 150);
         
-        addObject(new Button(), 100, 200);
-        addObject(new EuButton(), 300, 200);
+        addObject(new EuButton(), 100, 200);
         addObject(new Button(), 500, 200);
         
     }
